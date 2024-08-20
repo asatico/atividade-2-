@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <locale.h>
+
+
+int main (){
+	setlocale(LC_ALL,"");
+    system("color fc");
+    
+    int numero;
+	
+    printf("Escreva um numero:");
+    scanf("%i", &numero);
+    
+	//verificar se o numero e par ou impar.
+	
+	if(numero %2 ==0) {
+		printf("O número e par. \n");
+   }else{
+     	printf("O número e impar. \n");	
+        }
+	
+return 0; 	
+}
