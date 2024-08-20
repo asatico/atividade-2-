@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <locale.h>
+#include <math.h>
+int main(){
+	setlocale(LC_ALL,"");
+	system("color fc");
+	
+	float raio,area;
+	
+	printf("Digite o raio do círculo: ");
+	scanf("%f",&raio);
+	
+//calcular a área do círculo
+	area = M_PI * raio * raio;
+	
+	printf("A área do cículo com raio %.2f é: %.2f,", raio, area);
+	
+return 0;	
+}
