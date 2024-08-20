@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL,"portugues");
+	system("color fc");
+	
+	float numero,numero2,soma;
+	
+	printf("Escreva um numero: ");
+	scanf("%f",&numero);
+	
+	printf("Escreva outro numero: ");
+	scanf("%f",&numero2);
+	
+	soma = numero + numero2;
+	
+	printf("A soma deles sao: %.0f",soma);
+		
+return 0;	
+	
+}
