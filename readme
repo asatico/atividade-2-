@@ -6,5 +6,6 @@
 #include <locale.h>
 
 int main() {
-	printf("Hello World");
+	setlocale(LC_ALL, "portuguese");
+	printf("Hello, World!");
 }
